@@ -1,0 +1,15 @@
+/home/aryn/RiderProjects/Roadmap/Application/bin/Debug/net8.0/Application.deps.json
+/home/aryn/RiderProjects/Roadmap/Application/bin/Debug/net8.0/Application.dll
+/home/aryn/RiderProjects/Roadmap/Application/bin/Debug/net8.0/Application.pdb
+/home/aryn/RiderProjects/Roadmap/Application/bin/Debug/net8.0/Domain.dll
+/home/aryn/RiderProjects/Roadmap/Application/bin/Debug/net8.0/Domain.pdb
+/home/aryn/RiderProjects/Roadmap/Application/obj/Debug/net8.0/Application.csproj.AssemblyReference.cache
+/home/aryn/RiderProjects/Roadmap/Application/obj/Debug/net8.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/aryn/RiderProjects/Roadmap/Application/obj/Debug/net8.0/Application.AssemblyInfoInputs.cache
+/home/aryn/RiderProjects/Roadmap/Application/obj/Debug/net8.0/Application.AssemblyInfo.cs
+/home/aryn/RiderProjects/Roadmap/Application/obj/Debug/net8.0/Application.csproj.CoreCompileInputs.cache
+/home/aryn/RiderProjects/Roadmap/Application/obj/Debug/net8.0/Application.csproj.CopyComplete
+/home/aryn/RiderProjects/Roadmap/Application/obj/Debug/net8.0/Application.dll
+/home/aryn/RiderProjects/Roadmap/Application/obj/Debug/net8.0/refint/Application.dll
+/home/aryn/RiderProjects/Roadmap/Application/obj/Debug/net8.0/Application.pdb
+/home/aryn/RiderProjects/Roadmap/Application/obj/Debug/net8.0/ref/Application.dll

@@ -1,0 +1,17 @@
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/bin/Debug/net8.0/Roadmap.Persistance.deps.json
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/bin/Debug/net8.0/Roadmap.Persistance.dll
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/bin/Debug/net8.0/Roadmap.Persistance.pdb
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/bin/Debug/net8.0/Roadmap.Application.dll
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/bin/Debug/net8.0/Roadmap.Domain.dll
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/bin/Debug/net8.0/Roadmap.Application.pdb
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/bin/Debug/net8.0/Roadmap.Domain.pdb
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/obj/Debug/net8.0/Roadmap.Persistance.csproj.AssemblyReference.cache
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/obj/Debug/net8.0/Roadmap.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/obj/Debug/net8.0/Roadmap.Persistance.AssemblyInfoInputs.cache
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/obj/Debug/net8.0/Roadmap.Persistance.AssemblyInfo.cs
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/obj/Debug/net8.0/Roadmap.Persistance.csproj.CoreCompileInputs.cache
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/obj/Debug/net8.0/Roadmap.Persistance.csproj.CopyComplete
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/obj/Debug/net8.0/Roadmap.Persistance.dll
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/obj/Debug/net8.0/refint/Roadmap.Persistance.dll
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/obj/Debug/net8.0/Roadmap.Persistance.pdb
+/home/aryn/RiderProjects/Roadmap/Roadmap.Persistance/obj/Debug/net8.0/ref/Roadmap.Persistance.dll

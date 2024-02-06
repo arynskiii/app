@@ -1,0 +1,15 @@
+/home/aryn/RiderProjects/Roadmap/Roadmap.Application/bin/Debug/net8.0/Roadmap.Application.deps.json
+/home/aryn/RiderProjects/Roadmap/Roadmap.Application/bin/Debug/net8.0/Roadmap.Application.dll
+/home/aryn/RiderProjects/Roadmap/Roadmap.Application/bin/Debug/net8.0/Roadmap.Application.pdb
+/home/aryn/RiderProjects/Roadmap/Roadmap.Application/bin/Debug/net8.0/Roadmap.Domain.dll
+/home/aryn/RiderProjects/Roadmap/Roadmap.Application/bin/Debug/net8.0/Roadmap.Domain.pdb
+/home/aryn/RiderProjects/Roadmap/Roadmap.Application/obj/Debug/net8.0/Roadmap.Application.csproj.AssemblyReference.cache
+/home/aryn/RiderProjects/Roadmap/Roadmap.Application/obj/Debug/net8.0/Roadmap.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/aryn/RiderProjects/Roadmap/Roadmap.Application/obj/Debug/net8.0/Roadmap.Application.AssemblyInfoInputs.cache
+/home/aryn/RiderProjects/Roadmap/Roadmap.Application/obj/Debug/net8.0/Roadmap.Application.AssemblyInfo.cs
+/home/aryn/RiderProjects/Roadmap/Roadmap.Application/obj/Debug/net8.0/Roadmap.Application.csproj.CoreCompileInputs.cache
+/home/aryn/RiderProjects/Roadmap/Roadmap.Application/obj/Debug/net8.0/Roadmap.Application.csproj.CopyComplete
+/home/aryn/RiderProjects/Roadmap/Roadmap.Application/obj/Debug/net8.0/Roadmap.Application.dll
+/home/aryn/RiderProjects/Roadmap/Roadmap.Application/obj/Debug/net8.0/refint/Roadmap.Application.dll
+/home/aryn/RiderProjects/Roadmap/Roadmap.Application/obj/Debug/net8.0/Roadmap.Application.pdb
+/home/aryn/RiderProjects/Roadmap/Roadmap.Application/obj/Debug/net8.0/ref/Roadmap.Application.dll
