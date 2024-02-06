@@ -18,10 +18,6 @@ services.AddPersistence(builder.Configuration);
 services.AddControllers();
 var app = builder.Build();
 app.MapControllers();
-
-
-
-
 using (var scope = app.Services.CreateScope())
 {
     var serviceProvider = scope.ServiceProvider;

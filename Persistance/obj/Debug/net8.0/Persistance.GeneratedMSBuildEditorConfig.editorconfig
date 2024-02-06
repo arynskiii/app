@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Roadmap.Persistance
-build_property.ProjectDir = /home/aryn/RiderProjects/Roadmap/Persistance/
+build_property.ProjectDir = /home/aryn/app/Persistance/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

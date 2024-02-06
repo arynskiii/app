@@ -11,14 +11,14 @@ namespace Roadmap.Application.Roadmaps.Commands.Admin.LoginAdmin;
 
 public class LoginAdminCommandHandler : IRequestHandler<LoginAdminCommand,LoginAdminCommandOutput>
 {
-    private readonly UserManager<IdentityUser> _userManager;
-    private readonly SignInManager<IdentityUser> _signInManager;
-    private readonly RoleManager<IdentityRole> _roleManager;
+    private readonly UserManager<User> _userManager;
+    private readonly SignInManager<User> _signInManager;
+    private readonly RoleManager<IdentityRole<Guid>> _roleManager;
 
     public LoginAdminCommandHandler(
-        UserManager<IdentityUser> userManager,
-        SignInManager<IdentityUser> signInManager,
-        RoleManager<IdentityRole> roleManager)
+        UserManager<User> userManager,
+        SignInManager<User> signInManager,
+        RoleManager<IdentityRole<Guid>> roleManager)
     {
         _userManager = userManager;
         _signInManager = signInManager;
@@ -41,8 +41,8 @@ public class LoginAdminCommandHandler : IRequestHandler<LoginAdminCommand,LoginA
 
        var roles = await _userManager.GetRolesAsync(user);
 
-   var authToken=   await GenerateToken(user.Email, roles);
-   return new LoginAdminCommandOutput
+        var authToken=   await GenerateToken(user.Email, roles);
+        return new LoginAdminCommandOutput
    {
        TokenValue = authToken
    };

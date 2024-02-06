@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vejgDD3S478UUHyVeaszCjD2uzs6Ccgwq7VRbGF0vvZjT7WWV4psLA9IgMA/UM/BLtAWlmUA0Gvgq4gnleZLZw==",
+  "dgSpecHash": "V8LsG9fLCWr/EU1U+56Na3c5UZ06sd5su+LhGYpgIDiv8CZSF8jQF1ca2vJNnivKXRZW5kRpZ45kWNjxkLWRzQ==",
   "success": true,
-  "projectFilePath": "/home/aryn/RiderProjects/Roadmap/Persistance/Persistance.csproj",
+  "projectFilePath": "/home/aryn/app/Persistance/Persistance.csproj",
   "expectedPackageFiles": [
     "/home/aryn/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/aryn/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Roadmap.Persistance.RoadmapCfg;
 
-public class UserConfiguration : IEntityTypeConfiguration<Domain.Admin>
+public class UserConfiguration : IEntityTypeConfiguration<Domain.User>
 {
-    public void Configure(EntityTypeBuilder<Domain.Admin> builder)
+    public void Configure(EntityTypeBuilder<Domain.User> builder)
     {
-        builder.HasKey(admin => admin.Id);
+        builder.HasKey(user=>user.Id);
     }
     
 }

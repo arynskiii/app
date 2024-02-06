@@ -11,7 +11,7 @@ public interface IRoadmapDbContext
         set;
     }
 
-    DbSet<Domain.Admin> Admins { get; set; }
-    DbSet<Domain.Employe>Employes { get; set; }    
+    DbSet<Domain.User> Users { get; set; }
+   
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }

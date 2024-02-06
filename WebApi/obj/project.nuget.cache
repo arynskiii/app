@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MQqb6Rz8vnIiW2FtTGcv8v79tddXpqxBIDSe4lInK/Lsm3/8nCY5KFOOYXCvljEwoLiS/qrZ/v8jscGZxTGM7w==",
+  "dgSpecHash": "oe1tj+kCmpDJrjnwf6ukrtQR9xQMEzByQq7yMalXH07GyGbpgsSnRm/AkbCSttOZCSyyQ85IipOltkVBOtKzXg==",
   "success": true,
-  "projectFilePath": "/home/aryn/RiderProjects/Roadmap/WebApi/WebApi.csproj",
+  "projectFilePath": "/home/aryn/app/WebApi/WebApi.csproj",
   "expectedPackageFiles": [
     "/home/aryn/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/aryn/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

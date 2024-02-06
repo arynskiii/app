@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/aryn/RiderProjects/Roadmap/Domain/Domain.csproj": {}
+    "/home/aryn/app/Domain/Domain.csproj": {}
   },
   "projects": {
-    "/home/aryn/RiderProjects/Roadmap/Domain/Domain.csproj": {
+    "/home/aryn/app/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/aryn/RiderProjects/Roadmap/Domain/Domain.csproj",
+        "projectUniqueName": "/home/aryn/app/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/aryn/RiderProjects/Roadmap/Domain/Domain.csproj",
+        "projectPath": "/home/aryn/app/Domain/Domain.csproj",
         "packagesPath": "/home/aryn/.nuget/packages/",
-        "outputPath": "/home/aryn/RiderProjects/Roadmap/Domain/obj/",
+        "outputPath": "/home/aryn/app/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/aryn/.nuget/NuGet/NuGet.Config"

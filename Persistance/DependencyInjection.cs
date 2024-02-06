@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Roadmap.Application.Interfaces;
+using Roadmap.Domain;
 
 
 namespace Roadmap.Persistance;
@@ -16,8 +17,9 @@ public  static class DependencyInjection
         {
             options.UseSqlite(connectionString);
         });
-        services.AddScoped<IRoadmapDbContext>(provider => provider.GetService<RoadmapDbContext>());
-        services.AddIdentity<IdentityUser, IdentityRole>()
+        services.AddScoped<IRoadmapDbContext>(provider => provider.GetRequiredService<RoadmapDbContext>());
+        
+        services.AddIdentity<User, IdentityRole<Guid>>()
             .AddEntityFrameworkStores<RoadmapDbContext>()
             .AddDefaultTokenProviders();
         return services;

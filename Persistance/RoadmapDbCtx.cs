@@ -3,15 +3,13 @@ using Roadmap.Application.Interfaces;
 using Roadmap.Persistance.RoadmapCfg;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Roadmap.Domain;
 
 
 namespace Roadmap.Persistance;
 
-public class RoadmapDbContext : DbContext, IRoadmapDbContext
-    
+public class RoadmapDbContext : IdentityDbContext<User, IdentityRole<Guid>, Guid>, IRoadmapDbContext
 {
-    public DbSet<Domain.Admin> Admins { get; set; }
-    public DbSet<Domain.Employe>Employes { get; set; }
     public DbSet<Domain.Roadmap> Roadmaps { get; set; } 
     
     public RoadmapDbContext(DbContextOptions<RoadmapDbContext> options)
@@ -20,6 +18,9 @@ public class RoadmapDbContext : DbContext, IRoadmapDbContext
     protected override void OnModelCreating(ModelBuilder builder)
     {
         builder.ApplyConfiguration(new RoadmapConfiguration());
+        builder.ApplyConfiguration(new UserConfiguration());
+       
+        
         base.OnModelCreating(builder);
     }
 }

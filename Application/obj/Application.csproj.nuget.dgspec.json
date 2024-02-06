@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/aryn/RiderProjects/Roadmap/Application/Application.csproj": {}
+    "/home/aryn/app/Application/Application.csproj": {}
   },
   "projects": {
-    "/home/aryn/RiderProjects/Roadmap/Application/Application.csproj": {
+    "/home/aryn/app/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/aryn/RiderProjects/Roadmap/Application/Application.csproj",
+        "projectUniqueName": "/home/aryn/app/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "/home/aryn/RiderProjects/Roadmap/Application/Application.csproj",
+        "projectPath": "/home/aryn/app/Application/Application.csproj",
         "packagesPath": "/home/aryn/.nuget/packages/",
-        "outputPath": "/home/aryn/RiderProjects/Roadmap/Application/obj/",
+        "outputPath": "/home/aryn/app/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/aryn/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/aryn/RiderProjects/Roadmap/Domain/Domain.csproj": {
-                "projectPath": "/home/aryn/RiderProjects/Roadmap/Domain/Domain.csproj"
+              "/home/aryn/app/Domain/Domain.csproj": {
+                "projectPath": "/home/aryn/app/Domain/Domain.csproj"
               }
             }
           }
@@ -107,14 +107,14 @@
         }
       }
     },
-    "/home/aryn/RiderProjects/Roadmap/Domain/Domain.csproj": {
+    "/home/aryn/app/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/aryn/RiderProjects/Roadmap/Domain/Domain.csproj",
+        "projectUniqueName": "/home/aryn/app/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/aryn/RiderProjects/Roadmap/Domain/Domain.csproj",
+        "projectPath": "/home/aryn/app/Domain/Domain.csproj",
         "packagesPath": "/home/aryn/.nuget/packages/",
-        "outputPath": "/home/aryn/RiderProjects/Roadmap/Domain/obj/",
+        "outputPath": "/home/aryn/app/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/aryn/.nuget/NuGet/NuGet.Config"

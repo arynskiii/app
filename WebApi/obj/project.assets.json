@@ -3632,11 +3632,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/aryn/RiderProjects/Roadmap/WebApi/WebApi.csproj",
+      "projectUniqueName": "/home/aryn/app/WebApi/WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "/home/aryn/RiderProjects/Roadmap/WebApi/WebApi.csproj",
+      "projectPath": "/home/aryn/app/WebApi/WebApi.csproj",
       "packagesPath": "/home/aryn/.nuget/packages/",
-      "outputPath": "/home/aryn/RiderProjects/Roadmap/WebApi/obj/",
+      "outputPath": "/home/aryn/app/WebApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/aryn/.nuget/NuGet/NuGet.Config"
@@ -3651,11 +3651,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/aryn/RiderProjects/Roadmap/Application/Application.csproj": {
-              "projectPath": "/home/aryn/RiderProjects/Roadmap/Application/Application.csproj"
+            "/home/aryn/app/Application/Application.csproj": {
+              "projectPath": "/home/aryn/app/Application/Application.csproj"
             },
-            "/home/aryn/RiderProjects/Roadmap/Persistance/Persistance.csproj": {
-              "projectPath": "/home/aryn/RiderProjects/Roadmap/Persistance/Persistance.csproj"
+            "/home/aryn/app/Persistance/Persistance.csproj": {
+              "projectPath": "/home/aryn/app/Persistance/Persistance.csproj"
             }
           }
         }
