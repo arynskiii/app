@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Roadmap.Application.Interfaces;
 
-public interface IRoadmapDbContext
+public interface IAppDbContext
 {
     DbSet<Domain.Roadmap> Roadmaps
     {

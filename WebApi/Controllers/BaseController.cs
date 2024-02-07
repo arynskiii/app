@@ -3,9 +3,11 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Roadmap.WebApi.Controllers;
-
+[ApiVersion("1.0")]
+[ApiVersion("2.0")]
+[Produces("application/json")]
 [ApiController]
-[Route("api/[controller]/[action]")]
+[Route("api/{version:apiVersion}/[controller]")]
 public class BaseController : ControllerBase
 {
     private IMediator _mediator;

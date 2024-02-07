@@ -5,8 +5,8 @@ namespace Roadmap.Application.Roadmaps.Commands.CreateRoadmap;
 
 public class CreateRoadmapCommandHandler : IRequestHandler<CreateRoadmapCommand,Guid>
 {
-    private readonly IRoadmapDbContext _dbContext;
-    public CreateRoadmapCommandHandler(IRoadmapDbContext dbContext) => _dbContext = dbContext;
+    private readonly IAppDbContext _dbContext;
+    public CreateRoadmapCommandHandler(IAppDbContext dbContext) => _dbContext = dbContext;
 
     public async Task<Guid>Handle(CreateRoadmapCommand request, CancellationToken cancellationToken)
     {

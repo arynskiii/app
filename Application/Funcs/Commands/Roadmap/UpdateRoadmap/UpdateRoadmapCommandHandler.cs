@@ -7,13 +7,13 @@ namespace Roadmap.Application.Roadmaps.Commands.UpdateRoadmap;
 
 public class UpdateRoadmapCommandHandler : IRequestHandler<UpdateRoadmapCommand,Guid>
 {
-    private readonly IRoadmapDbContext _dbContext;
-    public UpdateRoadmapCommandHandler(IRoadmapDbContext dbContext) => _dbContext = dbContext;
+    private readonly IAppDbContext _dbContext;
+    public UpdateRoadmapCommandHandler(IAppDbContext dbContext) => _dbContext = dbContext;
 
     public async Task<Guid> Handle(UpdateRoadmapCommand request, CancellationToken cancellationToken)
     {
         var entity = await _dbContext.Roadmaps.FirstOrDefaultAsync(rdmp => rdmp.Id == request.Id, cancellationToken);
-        if (entity == null || entity.UserId!=request.UserId)
+        if (entity == null )
         {
             throw new NotFoundException(nameof(Roadmap), request.Id);
 

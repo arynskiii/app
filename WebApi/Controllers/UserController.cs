@@ -6,7 +6,6 @@ using Roadmap.Application.Roadmaps.Commands.CreateAdmin;
 using Roadmap.WebApi.Models;
 
 namespace Roadmap.WebApi.Controllers;
-
 [Route("api/[controller]")]
 [ApiController]
 public class UserController : BaseController
@@ -14,9 +13,23 @@ public class UserController : BaseController
 
     private readonly IMapper _mapper;
     public UserController(IMapper mapper) => _mapper = mapper;
-
+    /// <summary>
+    ///  Create User
+    /// </summary>
+    /// <remarks>
+    /// Sample request:
+    ///POST /user
+    /// {
+    ///     email: "user email",
+    ///     password: "user password"
+    /// }
+    /// </remarks>
+    /// <param name="userDTO"> userDTO object</param>
+    /// <returns>Returns id (guid)</returns>
+    /// <response code="200"> Success</response>
     [HttpPost]
-    public async Task<ActionResult<Guid>> CreateAdmin([FromBody] UserDTO userDTO)
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public async Task<ActionResult<Guid>> CreateUser([FromBody] UserDTO userDTO)
     {
         var command = _mapper.Map<CreateUserCommand>(userDTO);
       var id=  await Mediator.Send(command);
@@ -24,7 +37,26 @@ public class UserController : BaseController
 
     }
 
+    
+    /// <summary>
+    ///  Create User
+    /// </summary>
+    /// <remarks>
+    /// Sample request:
+    ///POST /user/login
+    /// {
+    ///     email: "user email",
+    ///     password: "user password"
+    /// }
+    /// </remarks>
+    /// <param name="userDTO"> userDTO object</param>
+    /// <returns></returns>
+    /// <response code="200"> Success</response>
+    /// <response code="400"> If the user write uncorrect data</response>
     [HttpPost("login")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
     public async Task<ActionResult> Login([FromBody] UserDTO userDto)
     {
         var input = new LoginAdminCommand();

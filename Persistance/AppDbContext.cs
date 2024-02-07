@@ -8,11 +8,11 @@ using Roadmap.Domain;
 
 namespace Roadmap.Persistance;
 
-public class RoadmapDbContext : IdentityDbContext<User, IdentityRole<Guid>, Guid>, IRoadmapDbContext
+public class AppDbContext : IdentityDbContext<User, IdentityRole<Guid>, Guid>, IAppDbContext
 {
     public DbSet<Domain.Roadmap> Roadmaps { get; set; } 
     
-    public RoadmapDbContext(DbContextOptions<RoadmapDbContext> options)
+    public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options) {}
 
     protected override void OnModelCreating(ModelBuilder builder)
