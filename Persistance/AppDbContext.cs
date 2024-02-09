@@ -10,6 +10,7 @@ namespace Roadmap.Persistance;
 
 public class AppDbContext : IdentityDbContext<User, IdentityRole<Guid>, Guid>, IAppDbContext
 {
+    public DbSet<Domain.Category> Categories { get; set; }
     public DbSet<Domain.Roadmap> Roadmaps { get; set; } 
     
     public AppDbContext(DbContextOptions<AppDbContext> options)

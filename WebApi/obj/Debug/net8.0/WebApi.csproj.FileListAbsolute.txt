@@ -174,3 +174,7 @@
 /home/aryn/app/WebApi/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /home/aryn/app/WebApi/bin/Debug/net8.0/Microsoft.AspNetCore.Mvc.Versioning.dll
 /home/aryn/app/WebApi/bin/Debug/net8.0/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+/home/aryn/app/WebApi/bin/Debug/net8.0/CommunityToolkit.HighPerformance.dll
+/home/aryn/app/WebApi/bin/Debug/net8.0/Minio.dll
+/home/aryn/app/WebApi/bin/Debug/net8.0/System.IO.Hashing.dll
+/home/aryn/app/WebApi/bin/Debug/net8.0/System.Reactive.dll

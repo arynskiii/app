@@ -13,12 +13,12 @@ public class CreateRoadmapCommandHandler : IRequestHandler<CreateRoadmapCommand,
        
         var roadmap = new Domain.Roadmap()
         {
-            CategoryId = request.CategoryId,
+           
             Description = request.Description,
             Title = request.Title,
-            UserId = request.UserId
+            CategoryId = request.CategoryId
+           
         };
-    
         await _dbContext.Roadmaps.AddAsync(roadmap, cancellationToken);
         await _dbContext.SaveChangesAsync(cancellationToken);
 

@@ -15,7 +15,6 @@ public class UserDTO : ImapWith<CreateUserCommand>
             .ForMember(com => com.Email,
                 opt => opt.MapFrom(dto => dto.Email))
             .ForMember(com => com.Password,
-                opt => opt.MapFrom(dto => dto.Password));
-
+                opt => opt.MapFrom(dto => dto.Password)); 
     }
 }

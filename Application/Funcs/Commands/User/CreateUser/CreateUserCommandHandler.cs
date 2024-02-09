@@ -7,7 +7,7 @@ namespace Roadmap.Application.Roadmaps.Commands.CreateAdmin;
 
 public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand,Guid>
 {
-    const string emailAdmin = "admin";
+    const string emailAdmin = "arynmurat";
     private readonly UserManager<User> _userManager;
     private readonly RoleManager<IdentityRole<Guid>> _roleManager;
     

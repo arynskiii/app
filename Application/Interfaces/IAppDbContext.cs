@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Roadmap.Domain;
 
 
 namespace Roadmap.Application.Interfaces;
@@ -10,6 +11,8 @@ public interface IAppDbContext
         get;
         set;
     }
+    
+    DbSet<Category> Categories { get; set; }
 
     DbSet<Domain.User> Users { get; set; }
    

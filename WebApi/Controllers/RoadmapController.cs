@@ -1,6 +1,11 @@
+using System.Net;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Minio;
+using Minio.DataModel.Args;
+using Minio.Exceptions;
+using Roadmap.Application.Funcs.Query.GetRoadmapByID;
 using Roadmap.Application.Roadmaps.Commands.CreateRoadmap;
 using Roadmap.Application.Roadmaps.Commands.DeleteRoadmap;
 using Roadmap.Application.Roadmaps.Commands.UpdateRoadmap;
@@ -13,11 +18,15 @@ namespace Roadmap.WebApi.Controllers;
 [Route("api/[controller]")]
 [Produces("application/json")]
 public class RoadmapController : BaseController
-{
-    private readonly IMapper _mapper;
 
-    public RoadmapController(IMapper mapper) =>
-        _mapper = mapper;
+
+
+{
+    
+    private readonly IMinioClient _minioClient;
+    private readonly IMapper _mapper;
+    public RoadmapController(IMapper mapper, IMinioClient minioClient) =>
+        (this._minioClient, this._mapper) = (minioClient, mapper);
 
     /// <summary>
     ///  Gets the list of Roadmaps
@@ -39,31 +48,66 @@ public class RoadmapController : BaseController
         var vm = await Mediator.Send(query);
         return Ok(vm);
     }
-    
+
     /// <summary>
-    ///  Create the Roadmap
+    /// Create the Roadmap
     /// </summary>
     /// <remarks>
     /// Sample request:
-    ///POST /roadmap
+    /// POST /roadmap
     /// {
     ///     title: "roadmap title",
     ///     description: "roadmap description"
     /// }
     /// </remarks>
-    /// <param name="createRoadmapDto">CreateRoadmapDTO object</param>
+    /// <param name="id"></param>
+    /// <param name="createRoadmapDTO">CreateRoadmapDTO object</param>
     /// <returns>Returns id (guid)</returns>
     /// <response code="201"> Success</response>
     /// <response code="401"> If the user is not admin</response>
-    [Authorize(AuthenticationSchemes = "Bearer")]    [Authorize(Roles = "Admin")]
-    [HttpPost]   
+    [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-    public async Task<ActionResult<Guid>> CreateRoadmap([FromBody] CreateRoadmapCommand createRoadmapDTO)
+    public async Task<ActionResult<Guid>> CreateRoadmap( [FromQuery] CreateRoadmapDTO createRoadmapDTO)
     {
+        
+        try
+        {
+            if (createRoadmapDTO == null)
+            {
+                return BadRequest("CreateRoadmapCommand object is null.");
+            }
+
+            if (createRoadmapDTO.File == null)
+            {
+                return BadRequest("File is not provided.");
+            }
+
+            // var beArgs = new BucketExistsArgs()
+            //     .WithBucket("test");
+            //
+            // bool found = await _minioClient.BucketExistsAsync(beArgs).ConfigureAwait(false);
+            //
+            // if (!found)
+            // {
+            //     var mbArgs = new MakeBucketArgs()
+            //         .WithBucket("test");
+            //     await _minioClient.MakeBucketAsync(mbArgs).ConfigureAwait(false);
+            // }
+            var putObjectArgs = new PutObjectArgs()
+                .WithBucket("mybucket")
+                .WithObject(createRoadmapDTO.File.FileName)
+                .WithFileName(createRoadmapDTO.File.FileName);
+            await _minioClient.PutObjectAsync(putObjectArgs).ConfigureAwait(true);
+        }
+        catch (MinioException e)
+        {
+            Console.WriteLine("File Upload Error: {0}", e.Message);
+            return StatusCode(500, "Internal server error.");
+        }
         var command = _mapper.Map<CreateRoadmapCommand>(createRoadmapDTO);
-        var id = await Mediator.Send(command);
-        return id;
+        var i = await Mediator.Send(command);
+        return i;
     }
 
     /// <summary>
@@ -90,7 +134,7 @@ public class RoadmapController : BaseController
         var id=  await Mediator.Send(command);
       return id;
     }
-
+    
     /// <summary>
     /// Deletes the Roadmap by id
     /// </summary>
@@ -113,7 +157,23 @@ public class RoadmapController : BaseController
         await Mediator.Send(sId);
         return NoContent();
     }
-   
+    /// <summary>
+    ///  Gets the Roadmap
+    /// </summary>
+    /// <remarks>
+    /// Sample request:
+    /// POST /roadmap/getRoadmapByID/88DEB432-062F-43DE-8DCD-8B6EF79073D3
+    ///</remarks>
+    /// <returns>Returns RoadmapVM</returns>
+    /// <response code="200"> Success</response>
+    /// <response code="404"> If roadmap not found</response>
+    [HttpPut("get")]
+    public async Task<ActionResult<RoadmapVM>> GetRoadmapByID([FromBody] GetRoadmapByIDDTO getRoadmapByIddto)
+    {
+        var id = _mapper.Map<GetRoadmapByIDQuery>(getRoadmapByIddto);
+        var roadmapVM = await Mediator.Send(id);
+        return roadmapVM;
+    }
         
     
 }
