@@ -91,7 +91,7 @@ using (var scope = app.Services.CreateScope())
     try
     {
         var context = serviceProvider.GetRequiredService<AppDbContext>();
-      
+   
     }
     catch (Exception exception)
     {

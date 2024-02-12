@@ -1,18 +1,16 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-
-namespace Roadmap.Persistance.RoadmapCfg;
-
-public class RoadmapConfiguration : IEntityTypeConfiguration<Domain.Roadmap>
+namespace Roadmap.Persistance.RoadmapCfg
 {
-
-    public void Configure(EntityTypeBuilder<Domain.Roadmap> builder)
+    public class RoadmapConfiguration : IEntityTypeConfiguration<Domain.Roadmap>
     {
-        builder.HasKey(roadmap => roadmap.Id);
-        builder.HasIndex(roadmap => roadmap.Id).IsUnique();
-        builder.Property(roadmap => roadmap.Title).IsRequired();
-        builder.Property(roadmap => roadmap.Description).IsRequired();
-
+        public void Configure(EntityTypeBuilder<Domain.Roadmap> builder)
+        {
+            builder.HasKey(roadmap => roadmap.Id);
+            builder.HasIndex(roadmap => roadmap.Id).IsUnique();
+            builder.Property(roadmap => roadmap.Title).IsRequired();
+            builder.Property(roadmap => roadmap.Description).IsRequired();
+        }
     }
 }

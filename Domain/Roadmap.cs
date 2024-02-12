@@ -1,6 +1,6 @@
 namespace Roadmap.Domain;
 
-public class Roadmap
+public class Roadmap    
 {
     public Guid Id { get; set; }
     public string Title { get; set; }
