@@ -9,6 +9,7 @@ public class CreateRoadmapCommand :  IRequest<Guid>
     public string Description { get; set; }
     
     public Guid CategoryId { get; set; }
+    public Guid UserId { get; set; }
  
     public IFormFile File { get; set; }
     

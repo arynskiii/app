@@ -17,7 +17,6 @@ public class CreateRoadmapCommandHandler : IRequestHandler<CreateRoadmapCommand,
             Description = request.Description,
             Title = request.Title,
             CategoryId = request.CategoryId
-           
         };
         await _dbContext.Roadmaps.AddAsync(roadmap, cancellationToken);
         await _dbContext.SaveChangesAsync(cancellationToken);

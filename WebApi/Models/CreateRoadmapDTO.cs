@@ -15,10 +15,6 @@ public class CreateRoadmapDTO : ImapWith<CreateRoadmapCommand>
         public IFormFile File { get; set; }
         public Guid CategoryId { get; set; } 
         
- 
-
-      
-      
         public void Mapping(Profile profile)
         {
             profile.CreateMap<CreateRoadmapDTO, CreateRoadmapCommand>()

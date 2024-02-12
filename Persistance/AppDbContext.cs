@@ -11,6 +11,7 @@ namespace Roadmap.Persistance;
 public class AppDbContext : IdentityDbContext<User, IdentityRole<Guid>, Guid>, IAppDbContext
 {
     public DbSet<Domain.Category> Categories { get; set; }
+    public DbSet<Domain.Template> Templates { get; set; }
     public DbSet<Domain.Roadmap> Roadmaps { get; set; } 
     
     public AppDbContext(DbContextOptions<AppDbContext> options)
@@ -20,6 +21,8 @@ public class AppDbContext : IdentityDbContext<User, IdentityRole<Guid>, Guid>, I
     {
         builder.ApplyConfiguration(new RoadmapConfiguration());
         builder.ApplyConfiguration(new UserConfiguration());
+        builder.ApplyConfiguration(new CategoryConfiguration());
+        builder.ApplyConfiguration(new TemplateConfiguration());
        
         
         base.OnModelCreating(builder);

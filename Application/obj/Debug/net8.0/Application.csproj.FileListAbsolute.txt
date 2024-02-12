@@ -29,3 +29,5 @@
 /home/aryn/app/Application/obj/Debug/net8.0/refint/Application.dll
 /home/aryn/app/Application/obj/Debug/net8.0/Application.pdb
 /home/aryn/app/Application/obj/Debug/net8.0/ref/Application.dll
+/home/aryn/app/Application/bin/Debug/net8.0/Application.runtimeconfig.json
+/home/aryn/app/Application/obj/Debug/net8.0/Application.genruntimeconfig.cache

@@ -11,6 +11,8 @@ public interface IAppDbContext
         get;
         set;
     }
+
+    DbSet<Domain.Template> Templates { get; set; }
     
     DbSet<Category> Categories { get; set; }
 

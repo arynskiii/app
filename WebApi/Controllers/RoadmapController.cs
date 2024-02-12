@@ -16,7 +16,6 @@ namespace Roadmap.WebApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-[Produces("application/json")]
 public class RoadmapController : BaseController
 
 
@@ -35,7 +34,6 @@ public class RoadmapController : BaseController
     /// Sample request:</remarks>
     /// <returns>Returns RoadmapListVM</returns>
     /// <response code="200"> Success</response>
-    /// <response code="401"> If the user is unathorized</response>
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<ActionResult<RoadmapVM>> GetAllRoadmaps()
@@ -65,6 +63,7 @@ public class RoadmapController : BaseController
     /// <returns>Returns id (guid)</returns>
     /// <response code="201"> Success</response>
     /// <response code="401"> If the user is not admin</response>
+
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -77,12 +76,7 @@ public class RoadmapController : BaseController
             {
                 return BadRequest("CreateRoadmapCommand object is null.");
             }
-
-            if (createRoadmapDTO.File == null)
-            {
-                return BadRequest("File is not provided.");
-            }
-
+            
             // var beArgs = new BucketExistsArgs()
             //     .WithBucket("test");
             //
@@ -105,7 +99,9 @@ public class RoadmapController : BaseController
             Console.WriteLine("File Upload Error: {0}", e.Message);
             return StatusCode(500, "Internal server error.");
         }
+        
         var command = _mapper.Map<CreateRoadmapCommand>(createRoadmapDTO);
+      
         var i = await Mediator.Send(command);
         return i;
     }
@@ -142,7 +138,7 @@ public class RoadmapController : BaseController
     /// Sample request:
     /// DELETE /roadmap/88DEB432-062F-43DE-8DCD-8B6EF79073D3
     /// </remarks>
-    /// <param name="id">Id of the note (guid)</param>
+    /// <param name="id">Id of the roadmap (guid)</param>
     /// <returns>Returns NoContent</returns>
     /// <response code="204">Success</response>
     /// <response code="401">If the user is no admin</response>
@@ -152,9 +148,9 @@ public class RoadmapController : BaseController
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]   
     public async Task<IActionResult> Delete([FromBody]DeleteRoadmapDTO deleteRoadmapDto)
     {
-        var sId = _mapper.Map<DeleteRoadmapCommand>(deleteRoadmapDto);
+        var id = _mapper.Map<DeleteRoadmapCommand>(deleteRoadmapDto);
         
-        await Mediator.Send(sId);
+        await Mediator.Send(id);
         return NoContent();
     }
     /// <summary>

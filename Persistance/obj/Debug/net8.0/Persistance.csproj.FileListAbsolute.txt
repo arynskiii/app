@@ -33,3 +33,5 @@
 /home/aryn/app/Persistance/obj/Debug/net8.0/refint/Persistance.dll
 /home/aryn/app/Persistance/obj/Debug/net8.0/Persistance.pdb
 /home/aryn/app/Persistance/obj/Debug/net8.0/ref/Persistance.dll
+/home/aryn/app/Persistance/bin/Debug/net8.0/Persistance.runtimeconfig.json
+/home/aryn/app/Persistance/obj/Debug/net8.0/Persistance.genruntimeconfig.cache

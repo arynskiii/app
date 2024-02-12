@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Roadmap.Application.Interfaces;
 using Roadmap.Persistance;
-using System.Text;
 using Microsoft.OpenApi.Models;
 using Minio;
 using Roadmap.Application.Common.Helpers;
@@ -92,7 +91,7 @@ using (var scope = app.Services.CreateScope())
     try
     {
         var context = serviceProvider.GetRequiredService<AppDbContext>();
-        DbInitializer.Initialize(context);
+      
     }
     catch (Exception exception)
     {
