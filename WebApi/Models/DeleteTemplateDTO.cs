@@ -11,7 +11,7 @@ public class DeleteTemplateDTO : ImapWith<DeleteTemplateCommand>
     public void Mapping(Profile profile)
     {
         profile.CreateMap<DeleteTemplateDTO, DeleteTemplateCommand>()
-            .ForMember(deleteTemplateCommand => deleteTemplateCommand.Id,
+            .ForPath(deleteTemplateCommand => deleteTemplateCommand.Id,
                 opt => opt.MapFrom(deleteTemplateDTO => deleteTemplateDTO.Id));
     }
     

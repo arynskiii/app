@@ -18,10 +18,9 @@ public  static class DependencyInjection
             options.UseNpgsql(connectionString);
         });
         services.AddScoped<IAppDbContext>(provider => provider.GetRequiredService<AppDbContext>());
-        
+
         services.AddIdentity<User, IdentityRole<Guid>>()
-            .AddEntityFrameworkStores<AppDbContext>()
-            .AddDefaultTokenProviders();
+            .AddEntityFrameworkStores<AppDbContext>();
         return services;
     }
 }

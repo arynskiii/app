@@ -2,13 +2,17 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Roadmap.Application.Funcs.Commands.Template;
+using Roadmap.Application.Funcs.Commands.TemplateUser.CreateTemplateUser;
+using Roadmap.Application.Funcs.Query.GetTemplate;
+using Roadmap.Domain;
 using Roadmap.WebApi.Models;
 
 namespace Roadmap.WebApi.Controllers;
 
 
-[ApiController]
+
 [Route("api/[controller]")]
+[ApiController]
 public class TemplateController : BaseController
 {
 
@@ -30,15 +34,13 @@ public class TemplateController : BaseController
     /// <returns>Returns id (guid)</returns>
     /// <response code="201"> Success</response>
     /// <response code="401"> If the user is not admin</response>
-    [HttpPost]
-    [Authorize(Roles = "Admin")]
+    [HttpPost()]
+
     public async Task<ActionResult<Guid>> CreateRoadmap([FromBody] CreateTemplateDTO createTemplateDto)
     {
-        
         var command = _mapper.Map<CreateTemplateCommand>(createTemplateDto);
         var id = await Mediator.Send(command);
         return id;
-
     }
 
     
@@ -61,5 +63,29 @@ public class TemplateController : BaseController
       return NoContent();
 
     }
+    
+    
+    /// <summary>
+    ///  Gets the Templates
+    /// </summary>
+    /// <remarks>
+    /// Sample request:
+    /// POST /template/88DEB432-062F-43DE-8DCD-8B6EF79073D3
+    ///</remarks>
+    /// <returns>Returns RoadmapVM</returns>
+    /// <response code="200"> Success</response>
+    /// <response code="404"> If roadmap not found</response>
+  [HttpGet("{id}")]
+  [Authorize]
+  public async Task<ActionResult<GetTemplateOutput>> GetTemplateById(Guid id)
+  {
+      var command = new GetTemplateCommand
+      {
+          Id = id
+      };
+      var templateVM = await Mediator.Send(command);
+      return templateVM;
+  }
+
 
 }

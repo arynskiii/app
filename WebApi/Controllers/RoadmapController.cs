@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Minio;
 using Minio.DataModel.Args;
 using Minio.Exceptions;
+using Roadmap.Application.Funcs.Commands.RoadmapUser.CreateRoadmapUser;
 using Roadmap.Application.Funcs.Query.GetRoadmapByID;
 using Roadmap.Application.Roadmaps.Commands.CreateRoadmap;
 using Roadmap.Application.Roadmaps.Commands.DeleteRoadmap;
@@ -15,18 +16,11 @@ using Roadmap.WebApi.Models;
 namespace Roadmap.WebApi.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/[controller]/[action]")]
 public class RoadmapController : BaseController
-
-
-
 {
-    
-    private readonly IMinioClient _minioClient;
     private readonly IMapper _mapper;
-    public RoadmapController(IMapper mapper, IMinioClient minioClient) =>
-        (this._minioClient, this._mapper) = (minioClient, mapper);
-
+    public RoadmapController(IMapper mapper) => _mapper = mapper;
     /// <summary>
     ///  Gets the list of Roadmaps
     /// </summary>
@@ -34,7 +28,7 @@ public class RoadmapController : BaseController
     /// Sample request:</remarks>
     /// <returns>Returns RoadmapListVM</returns>
     /// <response code="200"> Success</response>
-    [HttpGet]
+    [HttpGet("roadmaps")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<ActionResult<RoadmapVM>> GetAllRoadmaps()
     {
@@ -67,38 +61,8 @@ public class RoadmapController : BaseController
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-    public async Task<ActionResult<Guid>> CreateRoadmap( [FromQuery] CreateRoadmapDTO createRoadmapDTO)
+    public async Task<ActionResult<Guid>> CreateRoadmap( [FromBody] CreateRoadmapDTO createRoadmapDTO)
     {
-        
-        try
-        {
-            if (createRoadmapDTO == null)
-            {
-                return BadRequest("CreateRoadmapCommand object is null.");
-            }
-            
-            // var beArgs = new BucketExistsArgs()
-            //     .WithBucket("test");
-            //
-            // bool found = await _minioClient.BucketExistsAsync(beArgs).ConfigureAwait(false);
-            //
-            // if (!found)
-            // {
-            //     var mbArgs = new MakeBucketArgs()
-            //         .WithBucket("test");
-            //     await _minioClient.MakeBucketAsync(mbArgs).ConfigureAwait(false);
-            // }
-            var putObjectArgs = new PutObjectArgs()
-                .WithBucket("mybucket")
-                .WithObject(createRoadmapDTO.File.FileName)
-                .WithFileName(createRoadmapDTO.File.FileName);
-            await _minioClient.PutObjectAsync(putObjectArgs).ConfigureAwait(true);
-        }
-        catch (MinioException e)
-        {
-            Console.WriteLine("File Upload Error: {0}", e.Message);
-            return StatusCode(500, "Internal server error.");
-        }
         
         var command = _mapper.Map<CreateRoadmapCommand>(createRoadmapDTO);
       
@@ -163,10 +127,20 @@ public class RoadmapController : BaseController
     /// <returns>Returns RoadmapVM</returns>
     /// <response code="200"> Success</response>
     /// <response code="404"> If roadmap not found</response>
+    [Authorize]
     [HttpPut("get")]
     public async Task<ActionResult<RoadmapVM>> GetRoadmapByID([FromBody] GetRoadmapByIDDTO getRoadmapByIddto)
     {
         var id = _mapper.Map<GetRoadmapByIDQuery>(getRoadmapByIddto);
+
+        var command = new CreateRoadmapUserCommand
+        {
+            RoadmapId = id.Id
+        };
+       
+        command.UserId = UserId;
+        await Mediator.Send(command);
+        
         var roadmapVM = await Mediator.Send(id);
         return roadmapVM;
     }

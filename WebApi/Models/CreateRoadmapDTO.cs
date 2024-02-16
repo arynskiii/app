@@ -10,10 +10,9 @@ public class CreateRoadmapDTO : ImapWith<CreateRoadmapCommand>
         public string Title { get; set; }
         [Required]
         public string Description { get; set; }
+  
         [Required]
-        
-        public IFormFile File { get; set; }
-        public Guid CategoryId { get; set; } 
+        public Guid CategoryId { get; set; }
         
         public void Mapping(Profile profile)
         {
@@ -22,10 +21,9 @@ public class CreateRoadmapDTO : ImapWith<CreateRoadmapCommand>
                     opt => opt.MapFrom(roadmapDTO => roadmapDTO.Description))
                 .ForMember(roadmapCommand => roadmapCommand.Title,
                     opt => opt.MapFrom(roadmapDTO => roadmapDTO.Title))
-                .ForMember(roadmapCommand => roadmapCommand.File,
-                    opt => opt.MapFrom(roadmapDTO => roadmapDTO.File))
-                .ForMember(opt => opt.CategoryId,
-                    opt=>opt.MapFrom(dto=>dto.CategoryId));
+                .ForMember(roadmapCommand => roadmapCommand.CategoryId,
+                    opt => opt.MapFrom(dto => dto.CategoryId));
+
         }
 
 }

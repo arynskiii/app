@@ -11,6 +11,7 @@
 /home/aryn/RiderProjects/Roadmap/Domain/obj/Debug/net8.0/Domain.pdb
 /home/aryn/RiderProjects/Roadmap/Domain/obj/Debug/net8.0/ref/Domain.dll
 /home/aryn/app/Domain/bin/Debug/net8.0/Domain.deps.json
+/home/aryn/app/Domain/bin/Debug/net8.0/Domain.runtimeconfig.json
 /home/aryn/app/Domain/bin/Debug/net8.0/Domain.dll
 /home/aryn/app/Domain/bin/Debug/net8.0/Domain.pdb
 /home/aryn/app/Domain/obj/Debug/net8.0/Domain.csproj.AssemblyReference.cache
@@ -22,6 +23,5 @@
 /home/aryn/app/Domain/obj/Debug/net8.0/Domain.dll
 /home/aryn/app/Domain/obj/Debug/net8.0/refint/Domain.dll
 /home/aryn/app/Domain/obj/Debug/net8.0/Domain.pdb
-/home/aryn/app/Domain/obj/Debug/net8.0/ref/Domain.dll
-/home/aryn/app/Domain/bin/Debug/net8.0/Domain.runtimeconfig.json
 /home/aryn/app/Domain/obj/Debug/net8.0/Domain.genruntimeconfig.cache
+/home/aryn/app/Domain/obj/Debug/net8.0/ref/Domain.dll

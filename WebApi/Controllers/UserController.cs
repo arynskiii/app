@@ -1,13 +1,13 @@
+using System.Security.Claims;
 using AutoMapper;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Roadmap.Application.Roadmaps.Commands.Admin.LoginAdmin;
 using Roadmap.Application.Roadmaps.Commands.CreateAdmin;
 using Roadmap.WebApi.Models;
 
-namespace Roadmap.WebApi.Controllers;
-[Route("api/[controller]")]
-[ApiController]
+namespace Roadmap.WebApi.Controllers; 
 public class UserController : BaseController
 {
 
@@ -29,17 +29,16 @@ public class UserController : BaseController
     /// <response code="200"> Success</response>
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    public async Task<ActionResult<Guid>> CreateUser([FromBody] UserDTO userDTO)
+    public async Task<ActionResult<Guid>> CreateUser([FromBody] CreateUserDTO userDTO)
     {
-        var command = _mapper.Map<CreateUserCommand>(userDTO);
-      var id=  await Mediator.Send(command);
-      return id;
-
+       var command= _mapper.Map<CreateUserCommand>(userDTO);
+      var userId=await Mediator.Send(command);
+      return userId;
     }
 
     
     /// <summary>
-    ///  Create User
+    ///  Login User
     /// </summary>
     /// <remarks>
     /// Sample request:
@@ -49,7 +48,7 @@ public class UserController : BaseController
     ///     password: "user password"
     /// }
     /// </remarks>
-    /// <param name="userDTO"> userDTO object</param>
+    /// <param name="LoginUserDTO"> userDTO object</param>
     /// <returns></returns>
     /// <response code="200"> Success</response>
     /// <response code="400"> If the user write uncorrect data</response>
@@ -57,14 +56,14 @@ public class UserController : BaseController
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
-    public async Task<ActionResult> Login([FromBody] UserDTO userDto)
+    public async Task<ActionResult> Login([FromBody] LoginUserDTO userDto)
     {
         var input = new LoginAdminCommand();
         input.Email = userDto.Email;
         input.Password = userDto.Password;
         try
         {
-          var otput=  Mediator.Send(input);
+          var otput=await  Mediator.Send(input);
           return Ok(otput);
         }
         catch (Exception exception)

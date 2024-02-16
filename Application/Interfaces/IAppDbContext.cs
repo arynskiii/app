@@ -12,11 +12,15 @@ public interface IAppDbContext
         set;
     }
 
-    DbSet<Domain.Template> Templates { get; set; }
+    DbSet<Template> Templates { get; set; }
     
+    DbSet<RoadmapUser> RoadmapUs { get; set; }
     DbSet<Category> Categories { get; set; }
 
-    DbSet<Domain.User> Users { get; set; }
+    DbSet<User> Users { get; set; }
+    DbSet<TemplateUser>TemplateUsers { get; set; }
+    
+    DbSet<Sub_Template> SubTemplates { get; set; }
    
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }

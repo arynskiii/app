@@ -25,7 +25,6 @@ public class CreateTemplateCommandHandler : IRequestHandler<CreateTemplateComman
             {
                 throw new Exception("Roadmap is not found");
             }
-
             var template = new Domain.Template
             {
                 Title = request.Title,

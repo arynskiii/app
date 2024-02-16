@@ -9,9 +9,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9842cbf9-8a99-41b2-8b51-029f22654a48" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/372efbf9-3bd5-4b7a-9c28-3d5b83756118.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/372efbf9-3bd5-4b7a-9c28-3d5b83756118.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/372efbf9-3bd5-4b7a-9c28-3d5b83756118/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/372efbf9-3bd5-4b7a-9c28-3d5b83756118/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/4d8d60a8-4092-4390-88b1-43e1797f6e09.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/4d8d60a8-4092-4390-88b1-43e1797f6e09/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/55260627-97e6-4b56-8c4d-7cdd39953ef7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/55260627-97e6-4b56-8c4d-7cdd39953ef7/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/55260627-97e6-4b56-8c4d-7cdd39953ef7/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/55260627-97e6-4b56-8c4d-7cdd39953ef7/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/55260627-97e6-4b56-8c4d-7cdd39953ef7/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/5b92a7ac-ab1e-4805-83c1-58c2df3df07f.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/5b92a7ac-ab1e-4805-83c1-58c2df3df07f/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/7d85fbc4-21d9-4383-8c3e-38c6000aaa2d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/7d85fbc4-21d9-4383-8c3e-38c6000aaa2d/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/c8637a1e-b5dc-43b3-950f-9c02b7bd22a0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/dataSources/c8637a1e-b5dc-43b3-950f-9c02b7bd22a0/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Roadmap/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Funcs/Commands/User/CreateUser/CreateUserCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Funcs/Commands/User/CreateUser/CreateUserCommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/bin/Debug/net8.0/Application.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Application/bin/Debug/net8.0/Application.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Funcs/Commands/Roadmap/CreateRoadmap/CreateRoadmapCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Funcs/Commands/Roadmap/CreateRoadmap/CreateRoadmapCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Funcs/Commands/Template/CreateTemplate/CreateTemplateCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Funcs/Commands/Template/CreateTemplate/CreateTemplateCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Funcs/Commands/User/LoginUser/LoginAdminCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Funcs/Commands/User/LoginUser/LoginAdminCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Funcs/Commands/User/LoginUser/LoginAdminCommandOutput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Funcs/Commands/User/LoginUser/LoginAdminCommandOutput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Funcs/Query/GetAllRoadmaps/GetRoadmapByIDHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Funcs/Query/GetAllRoadmaps/GetRoadmapByIDHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Funcs/Query/GetAllRoadmaps/GetRoadmapByIDQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Funcs/Query/GetAllRoadmaps/GetRoadmapByIDQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Funcs/Query/GetAllRoadmaps/RoadmapVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Funcs/Query/GetAllRoadmaps/RoadmapVM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Interfaces/IAppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Interfaces/IAppDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/bin/Debug/net8.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/bin/Debug/net8.0/Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/bin/Debug/net8.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Application/bin/Debug/net8.0/Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/bin/Debug/net8.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/bin/Debug/net8.0/Domain.dll" afterDir="false" />
@@ -20,85 +42,66 @@
       <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net8.0/Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net8.0/Application.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net8.0/Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net8.0/Application.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net8.0/Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net8.0/Application.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net8.0/Application.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net8.0/Application.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net8.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net8.0/Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net8.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net8.0/Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net8.0/Application.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net8.0/Application.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net8.0/ref/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net8.0/ref/Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net8.0/refint/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net8.0/refint/Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/Roadmap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Roadmap.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/Template.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Template.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/bin/Debug/net8.0/Domain.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/bin/Debug/net8.0/Domain.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/bin/Debug/net8.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/bin/Debug/net8.0/Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/bin/Debug/net8.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/bin/Debug/net8.0/Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/Domain.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/Domain.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/Domain.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/Domain.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/ref/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/ref/Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/refint/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/net8.0/refint/Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persistance/Configs/RoadmapConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/Configs/RoadmapConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persistance/Configs/TemplateConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/Configs/TemplateConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/Migrations/20240212081802_MigrationApp.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/Migrations/20240212081802_MigrationApp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Persistance/bin/Debug/net8.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/bin/Debug/net8.0/Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persistance/bin/Debug/net8.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/bin/Debug/net8.0/Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persistance/bin/Debug/net8.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/bin/Debug/net8.0/Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persistance/bin/Debug/net8.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/bin/Debug/net8.0/Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persistance/bin/Debug/net8.0/Persistance.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/bin/Debug/net8.0/Persistance.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persistance/bin/Debug/net8.0/Persistance.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/bin/Debug/net8.0/Persistance.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persistance/bin/Debug/net8.0/Persistance.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/bin/Debug/net8.0/Persistance.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/Persistance.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/Persistance.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/Persistance.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/Persistance.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/Persistance.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/Persistance.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/Persistance.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/Persistance.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/Persistance.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/Persistance.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/Persistance.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/Persistance.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/Persistance.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/Persistance.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/Persistance.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/Persistance.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/ref/Persistance.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/ref/Persistance.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/refint/Persistance.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/obj/Debug/net8.0/refint/Persistance.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Persistance/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persistance/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/Controllers/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Controllers/BaseController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/Controllers/RoadmapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Controllers/RoadmapController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/Controllers/TemplateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Controllers/TemplateController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/Models/CreateRoadmapDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Models/CreateRoadmapDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/Models/CreateTemplateDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Models/CreateTemplateDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/Models/CreateUserDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Models/CreateUserDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/Models/DeleteTemplateDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Models/DeleteTemplateDTO.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/Microsoft.Data.Sqlite.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Sqlite.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/Persistance.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/Persistance.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/Persistance.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/Persistance.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/SQLitePCLRaw.batteries_v2.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/SQLitePCLRaw.core.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/SQLitePCLRaw.provider.e_sqlite3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/WebApi.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/WebApi.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/WebApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/WebApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/browser-wasm/nativeassets/net8.0/e_sqlite3.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/linux-arm/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/linux-arm64/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/linux-armel/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/linux-mips64/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/linux-musl-arm/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/linux-musl-x64/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/linux-ppc64le/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/linux-s390x/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/linux-x64/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/linux-x86/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/osx-arm64/native/libe_sqlite3.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/osx-x64/native/libe_sqlite3.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/win-arm/native/e_sqlite3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/win-arm64/native/e_sqlite3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/win-x64/native/e_sqlite3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net8.0/runtimes/win-x86/native/e_sqlite3.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApi/obj/Debug/net8.0/WebApi.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/obj/Debug/net8.0/WebApi.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApi/obj/Debug/net8.0/WebApi.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/obj/Debug/net8.0/WebApi.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApi/obj/Debug/net8.0/WebApi.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/obj/Debug/net8.0/WebApi.csproj.AssemblyReference.cache" afterDir="false" />
@@ -110,7 +113,6 @@
       <change beforePath="$PROJECT_DIR$/WebApi/obj/Debug/net8.0/ref/WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/obj/Debug/net8.0/ref/WebApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApi/obj/Debug/net8.0/refint/WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/obj/Debug/net8.0/refint/WebApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApi/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,19 +123,37 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/09cb1dc997654f76836b95c5c02211cb13e00/a5/11630279/Logger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/09cb1dc997654f76836b95c5c02211cb13e00/be/55428047/MessageLogger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2a4dad19c64a4f1a994732eaf2de348e1da00/a9/a4829075/ServiceProviderServiceExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/514aed886176429d98f4c49566504fe03be00/b4/72b6c039/ActionExecutedContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/649f9a5315084d038b64e29ea11b1fb56a00/49/7e97c67f/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6ea712d8e32c457981af20253b588ebd15c00/1a/d7dca1fc/AuthorizeAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6fb07e288afa4fb5b6e5c73ac90727b21dea00/28/12bff1aa/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6fb07e288afa4fb5b6e5c73ac90727b21dea00/39/643abb68/ValueStopwatch.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6fb07e288afa4fb5b6e5c73ac90727b21dea00/50/8759ddf0/ControllerActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6fb07e288afa4fb5b6e5c73ac90727b21dea00/b1/373382cd/OkObjectResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6fb07e288afa4fb5b6e5c73ac90727b21dea00/d1/1e296c5d/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/92bd86a637a3450aa3b133edd8991900c2d000/22/6238e782/MethodBaseInvoker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/92bd86a637a3450aa3b133edd8991900c2d000/39/d26a3c76/ValueTask`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/92bd86a637a3450aa3b133edd8991900c2d000/3d/366fa189/AsyncValueTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/92bd86a637a3450aa3b133edd8991900c2d000/4d/02d96f89/IIdentity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/92bd86a637a3450aa3b133edd8991900c2d000/81/4135addb/Task`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/92bd86a637a3450aa3b133edd8991900c2d000/b1/8059517b/IEquatable`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/92bd86a637a3450aa3b133edd8991900c2d000/c0/bc087e38/Stopwatch.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/92bd86a637a3450aa3b133edd8991900c2d000/c5/d96d6700/Task.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/998adbc8d9694b1698038b7584cff22e10800/eb/fd3a63a8/IdentityUser`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9d4222221a8b463d84022c8257b0d1be267c18/56/d5fa1df1/DbSet`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b371f23e77164e979f5d854cc16861eb46000/68/4ac8394d/DefaultHttpContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c691e960e8444db09e3aa1e7f967372ee800/c0/4ac9a611/PolicyServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d77301864b1c48788552d75cfe890bb380000/1f/75e4962c/IdentityServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e844fdaa6880445ebec3192ac083c5cf4b000/5d/5bfa0a86/RequestTrailerExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fc2de29b920b4475950c0adf08f18d991f800/43/0802c276/Logger`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/12a1519c2fdb37951dc1ca313de1ae4e612d06f8d87635b775e1dc8fff/IMinioClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/829d6ac6e62b9bee9ef8e79e827d87d0c31a7c2eefbc354135d9a8f2c4deb/Mapper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/82da33ac95b190bbf21e6179908f6ad6b034c9c8ba57ab7a90e7f52c138efa0/PutObjectArgs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/84bf67b0694840b8acd693f8a59de3ad820672ac37ec2c4fbf3a595c8ce24c/IObjectOperations.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8aca45508683a6169bab9e8bd96b7cda607d638cacfaa31173c8c278c45/ISender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bce6f3053e1fbd67fd056dab8e765d67ddf8f91d670fec42dac84d94d36ed/BucketExistsArgs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d515fb889657fcdcace3fed90735057b458ff9e0bb60bded7c8fe8b3a4673c/BucketArgs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ea47a167464f4f57e5395ff2850ec19bf26c4db0d04cbd38c5b13839e65/BucketOperations.cs" root0="SKIP_HIGHLIGHTING" />
@@ -151,40 +171,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.WebApi: http.executor": "Run",
-    ".NET Launch Settings Profile.WebApi: https.executor": "Run",
-    "Docker.docker-compose.yaml.minio4: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yaml.nginx: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yaml: Compose Deployment.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "js.buildTools.grunt.grunt-cli.package": "",
-    "last_opened_file_path": "/home/aryn/app",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Docker",
-    "settings.editor.splitter.proportion": "0.28476083",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.WebApi: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.WebApi: https.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yaml.minio4: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yaml.nginx: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yaml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.62457335&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;js.buildTools.grunt.grunt-cli.package&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/aryn/app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Docker&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.28476083&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite",
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;,
+      &quot;postgresql&quot;
     ],
-    "rider.external.source.directories": [
-      "/home/aryn/.config/JetBrains/Rider2023.3/resharper-host/DecompilerCache",
-      "/home/aryn/.config/JetBrains/Rider2023.3/resharper-host/SourcesCache",
-      "/home/aryn/.local/share/Symbols/src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/home/aryn/.config/JetBrains/Rider2023.3/resharper-host/DecompilerCache&quot;,
+      &quot;/home/aryn/.config/JetBrains/Rider2023.3/resharper-host/SourcesCache&quot;,
+      &quot;/home/aryn/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WebApi: http">
+}</component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApi: https">
     <configuration name="WebApi: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebApi/WebApi.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -358,7 +379,24 @@
       <workItem from="1707589910577" duration="2038000" />
       <workItem from="1707649118492" duration="579000" />
       <workItem from="1707652504803" duration="135000" />
-      <workItem from="1707710199320" duration="11091000" />
+      <workItem from="1707710199320" duration="11294000" />
+      <workItem from="1707756425078" duration="3048000" />
+      <workItem from="1707760574050" duration="3896000" />
+      <workItem from="1707807929006" duration="2713000" />
+      <workItem from="1707810664601" duration="12796000" />
+      <workItem from="1707881652793" duration="4107000" />
+      <workItem from="1707885776182" duration="988000" />
+      <workItem from="1707886776830" duration="194000" />
+      <workItem from="1707886984953" duration="255000" />
+      <workItem from="1707887260939" duration="3740000" />
+      <workItem from="1707897707068" duration="5755000" />
+      <workItem from="1707903531598" duration="2798000" />
+      <workItem from="1707907261099" duration="1903000" />
+      <workItem from="1707970880605" duration="4678000" />
+      <workItem from="1707975939313" duration="668000" />
+      <workItem from="1707976713290" duration="14987000" />
+      <workItem from="1707997574652" duration="3451000" />
+      <workItem from="1708056066463" duration="811000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;feat: Добавлен функционал для отправки файлов в хранилище Minio.&quot;">
       <option name="closed" value="true" />
@@ -396,8 +434,97 @@
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/WebApi/Controllers/UserController.cs</url>
+          <line>59</line>
+          <properties documentPath="$PROJECT_DIR$/WebApi/Controllers/UserController.cs" initialLine="60" containingFunctionPresentation="Method 'Login'">
+            <startOffsets>
+              <option value="1810" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1811" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/WebApi/Controllers/UserController.cs</url>
+          <line>66</line>
+          <properties documentPath="$PROJECT_DIR$/WebApi/Controllers/UserController.cs" initialLine="67" containingFunctionPresentation="Method 'Login'">
+            <startOffsets>
+              <option value="2018" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2035" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/WebApi/Controllers/BaseController.cs</url>
+          <line>20</line>
+          <properties documentPath="$PROJECT_DIR$/WebApi/Controllers/BaseController.cs" initialLine="23" containingFunctionPresentation="Property 'UserId'">
+            <startOffsets>
+              <option value="592" />
+            </startOffsets>
+            <endOffsets>
+              <option value="721" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/WebApi/Controllers/RoadmapUserController.cs</url>
+          <line>34</line>
+          <properties documentPath="$PROJECT_DIR$/WebApi/Controllers/RoadmapUserController.cs" initialLine="32" containingFunctionPresentation="Method 'ChooseRoadmap'">
+            <startOffsets>
+              <option value="1128" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1129" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/WebApi/Controllers/RoadmapUserController.cs</url>
+          <line>40</line>
+          <properties documentPath="$PROJECT_DIR$/WebApi/Controllers/RoadmapUserController.cs" initialLine="38" containingFunctionPresentation="Method 'ChooseRoadmap'">
+            <startOffsets>
+              <option value="1320" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1321" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/WebApi/Controllers/UserController.cs</url>
+          <line>32</line>
+          <properties documentPath="$PROJECT_DIR$/WebApi/Controllers/UserController.cs" initialLine="33" containingFunctionPresentation="Method 'CreateUser'">
+            <startOffsets>
+              <option value="1008" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1009" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#System.Security.Claims.ClaimsPrincipal" memberName="Identity" />
+        <PinnedItemInfo parentTag="Type#System.Security.Claims.ClaimsPrincipal" memberName="Claims" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="LaunchSettings">
+        <watch expression="input" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

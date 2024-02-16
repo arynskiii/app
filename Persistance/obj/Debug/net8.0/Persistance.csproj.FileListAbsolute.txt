@@ -16,6 +16,7 @@
 /home/aryn/RiderProjects/Roadmap/Persistance/obj/Debug/net8.0/Persistance.pdb
 /home/aryn/RiderProjects/Roadmap/Persistance/obj/Debug/net8.0/ref/Persistance.dll
 /home/aryn/app/Persistance/bin/Debug/net8.0/Persistance.deps.json
+/home/aryn/app/Persistance/bin/Debug/net8.0/Persistance.runtimeconfig.json
 /home/aryn/app/Persistance/bin/Debug/net8.0/Persistance.dll
 /home/aryn/app/Persistance/bin/Debug/net8.0/Persistance.pdb
 /home/aryn/app/Persistance/bin/Debug/net8.0/Application.dll
@@ -32,6 +33,5 @@
 /home/aryn/app/Persistance/obj/Debug/net8.0/Persistance.dll
 /home/aryn/app/Persistance/obj/Debug/net8.0/refint/Persistance.dll
 /home/aryn/app/Persistance/obj/Debug/net8.0/Persistance.pdb
-/home/aryn/app/Persistance/obj/Debug/net8.0/ref/Persistance.dll
-/home/aryn/app/Persistance/bin/Debug/net8.0/Persistance.runtimeconfig.json
 /home/aryn/app/Persistance/obj/Debug/net8.0/Persistance.genruntimeconfig.cache
+/home/aryn/app/Persistance/obj/Debug/net8.0/ref/Persistance.dll

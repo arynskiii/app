@@ -6,4 +6,6 @@ namespace Roadmap.Application.Funcs.Query.GetRoadmapByID;
 public class GetRoadmapByIDQuery : IRequest<RoadmapVM>
 {
     public Guid Id { get; set; }
+    
+    public Guid UserId { get; set; }
 }

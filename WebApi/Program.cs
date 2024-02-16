@@ -1,4 +1,5 @@
 using System.Reflection;
+using System.Text.Json.Serialization;
 using Roadmap.Application;
 using Roadmap.Application.Common.Mappings;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -24,14 +25,17 @@ services.AddAutoMapper(config =>
     config.AddProfile(new MappingProfile(typeof(IAppDbContext).Assembly));
 });
 
+services.AddApplication();
+services.AddPersistence(builder.Configuration);
+
 services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-    
+    x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+
 }).AddJwtBearer(x =>
 {
-    x.RequireHttpsMetadata = false;
     x.SaveToken = true;
     x.TokenValidationParameters = new TokenValidationParameters
     {
@@ -42,6 +46,7 @@ services.AddAuthentication(x =>
         ValidateAudience = false
     };
 });
+services.AddAuthorization();
 services.AddSwaggerGen(option =>
 {
     option.AddSecurityDefinition($"Bearer", new OpenApiSecurityScheme
@@ -72,18 +77,21 @@ services.AddSwaggerGen(option =>
         }
     });
 });
-services.AddControllers();
 services.AddEndpointsApiExplorer();
-services.AddControllersWithViews();
-services.AddSession();
-services.AddApplication();
-services.AddPersistence(builder.Configuration);
-services.AddControllers();
-services.AddAuthentication();
-services.AddAuthorization();
+
+services.AddControllers()
+    .AddJsonOptions(opt => opt.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
 var app = builder.Build();
+
+app.UseRouting();
+app.UseHttpsRedirection();
+
 app.UseSwaggerUI();
 app.UseSwagger();
+
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
 using (var scope = app.Services.CreateScope())
 {

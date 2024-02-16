@@ -5,11 +5,8 @@ using Minio;
 
 namespace Roadmap.WebApi.Controllers
 {
-    [ApiVersion("1.0")]
-    [ApiVersion("2.0")]
-    [Produces("application/json")]
     [ApiController]
-    [Route("api/{version:apiVersion}/[controller]")]
+    [Route("api/[controller]")]
     public class BaseController : ControllerBase
     {
         private IMediator _mediator;
@@ -21,7 +18,7 @@ namespace Roadmap.WebApi.Controllers
 
       
 
-        internal Guid UserId => !User.Identity.IsAuthenticated
+        public Guid UserId => !User.Identity.IsAuthenticated
             ? Guid.Empty
             : Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
     }

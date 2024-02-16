@@ -27,21 +27,29 @@ public class LoginAdminCommandHandler : IRequestHandler<LoginAdminCommand,LoginA
 
     public async Task<LoginAdminCommandOutput> Handle(LoginAdminCommand request, CancellationToken cancellationToken)
     {
+        Console.WriteLine("---------------------------------------------------------");
         var user =await _userManager.FindByEmailAsync(request.Email);
         if (user == null)
         {
             throw new Exception("User not found");
         }
+        Console.WriteLine("---------------------------------------------------------");
     
        var signInResult= await _signInManager.CheckPasswordSignInAsync(user, request.Password,false);
        if (!signInResult.Succeeded)
        {
            throw new Exception("Invalid Email or Password");
        }
+       Console.WriteLine("---------------------------------------------------------1");
+
 
        var roles = await _userManager.GetRolesAsync(user);
+       Console.WriteLine("---------------------------------------------------------2");
 
-        var authToken=   await GenerateToken(user.Email, roles);
+
+        var authToken=   await GenerateToken(user.Email, roles,user.Id);
+        Console.WriteLine("---------------------------------------------------------3");
+
         return new LoginAdminCommandOutput
    {
        TokenValue = authToken
@@ -49,9 +57,9 @@ public class LoginAdminCommandHandler : IRequestHandler<LoginAdminCommand,LoginA
 
     }
     
-    private async Task<AuthToken> GenerateToken(string email, IList<string> roles)
+    private async Task<AuthToken> GenerateToken(string email, IList<string> roles,Guid Id)
     {
-        var identity = GetIdentity(email, roles);
+        var identity = GetIdentity(email, roles,Id);
         var now = DateTime.UtcNow;
         var jwt = new JwtSecurityToken(
             notBefore: now,
@@ -71,14 +79,15 @@ public class LoginAdminCommandHandler : IRequestHandler<LoginAdminCommand,LoginA
         return authToken;
     }
     
-    private ClaimsIdentity GetIdentity(string login, IList<string> roles)
+    private ClaimsIdentity GetIdentity(string login, IList<string> roles,Guid Id)
     {
         var userRole = roles.Contains("Admin") ? "Admin" : "Employe";
 
         var claims = new List<Claim>
         {
             new Claim(ClaimsIdentity.DefaultNameClaimType, login),
-            new Claim(ClaimTypes.Role,userRole)
+            new Claim(ClaimTypes.Role,userRole),
+            new Claim(ClaimTypes.NameIdentifier,Id.ToString())
         };
         
         claims.AddRange(GetRoleClaims(roles));

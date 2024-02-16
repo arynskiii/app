@@ -1,5 +1,6 @@
 using AutoMapper;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Roadmap.Application.Common.Exceptions;
 using Roadmap.Application.Funcs.Query.GetRoadmapByID;
 using Roadmap.Application.Interfaces;
@@ -18,7 +19,7 @@ public class GetRoadmapByIDHandler: IRequestHandler<GetRoadmapByIDQuery,RoadmapV
 
     public async Task<RoadmapVM> Handle(GetRoadmapByIDQuery request, CancellationToken cancellationToken)
     {
-       var roadmap= await _DbContext.Roadmaps.FindAsync(request.Id);
+       var roadmap= await _DbContext.Roadmaps.Include(r=>r.Templates).FirstOrDefaultAsync(q=>q.Id == request.Id, cancellationToken: cancellationToken);
        if (roadmap == null)
        {
            throw new NotFoundException(nameof(roadmap), request.Id);

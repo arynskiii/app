@@ -24,6 +24,5 @@ public class CreateTemplateDTO : ImapWith<CreateTemplateCommand>
                 opt => opt.MapFrom(templateDTO => templateDTO.Description))
             .ForMember(templateCommand => templateCommand.RoadmapId,
                 opt => opt.MapFrom(templateDTO => templateDTO.RoadmapId));
-
     }
 }
