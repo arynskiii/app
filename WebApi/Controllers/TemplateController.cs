@@ -81,7 +81,8 @@ public class TemplateController : BaseController
   {
       var command = new GetTemplateCommand
       {
-          Id = id
+          Id = id,
+          UserId = UserId
       };
       var templateVM = await Mediator.Send(command);
       return templateVM;

@@ -14,8 +14,8 @@ var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
 var endpoint = "localhost:9000";
 
-var accessKey = "ydvnH3m2M7sJ0zGD";
-var secretKey = "Sf5kvjYFVNuuryNfVbwotXlK6VUjKRoy";
+var accessKey = "uhXXMORdeqf5nppJ";
+var secretKey = "AGwBcU7N9UkS0WzGp32cQIeFQfmGQ43S   ";
 
 services.AddMinio(configureClient => configureClient.WithEndpoint(endpoint).WithCredentials(accessKey, secretKey).WithSSL(false));
 

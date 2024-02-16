@@ -21,6 +21,8 @@ public interface IAppDbContext
     DbSet<TemplateUser>TemplateUsers { get; set; }
     
     DbSet<Sub_Template> SubTemplates { get; set; }
+    DbSet<Sub_TemplateUser>SubTemplateUsers { get; set; }
+    DbSet<FileStatus>FileStatus { get; set; }
    
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }
