@@ -12,12 +12,8 @@ using Roadmap.Application.Common.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);   
 var services = builder.Services;
-var endpoint = "localhost:9000";
 
-var accessKey = "uhXXMORdeqf5nppJ";
-var secretKey = "AGwBcU7N9UkS0WzGp32cQIeFQfmGQ43S   ";
 
-services.AddMinio(configureClient => configureClient.WithEndpoint(endpoint).WithCredentials(accessKey, secretKey).WithSSL(false));
 
 services.AddAutoMapper(config =>
 {
@@ -99,7 +95,11 @@ using (var scope = app.Services.CreateScope())
     try
     {
         var context = serviceProvider.GetRequiredService<AppDbContext>();
-   
+        var configuration = serviceProvider.GetRequiredService<IConfiguration>();
+        var endpoint = configuration.GetValue<string>("Endpoint");
+        var accessKey = configuration.GetValue<string>("AccessKey");
+        var secretKey = configuration.GetValue<string>("SecretKey");
+        services.AddMinio(configureClient => configureClient.WithEndpoint(endpoint).WithCredentials(accessKey, secretKey).WithSSL(false));
     }
     catch (Exception exception)
     {

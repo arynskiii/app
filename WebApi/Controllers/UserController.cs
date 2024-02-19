@@ -8,6 +8,9 @@ using Roadmap.Application.Roadmaps.Commands.CreateAdmin;
 using Roadmap.WebApi.Models;
 
 namespace Roadmap.WebApi.Controllers; 
+[Route("api/[controller]/[action]")]
+[ApiController]
+
 public class UserController : BaseController
 {
 
@@ -52,7 +55,7 @@ public class UserController : BaseController
     /// <returns></returns>
     /// <response code="200"> Success</response>
     /// <response code="400"> If the user write uncorrect data</response>
-    [HttpPost("login")]
+    [HttpPost]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
 

@@ -19,7 +19,7 @@ public class GetRoadmapListQueryHandler : IRequestHandler<GetRoadmapListQuery,Ro
     {
         var roadmapQuery = await _DbContext.Roadmaps.ToListAsync(cancellationToken);
         
-       var roadmapVM = _mapper.Map<List<RoadmapVM>>(roadmapQuery);
+       var roadmapVM = _mapper.Map<List<RoadmapVMDTO>>(roadmapQuery);
        return new RoadmapListVM
         {
             Roadmaps = roadmapVM

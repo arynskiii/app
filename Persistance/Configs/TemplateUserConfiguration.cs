@@ -4,9 +4,9 @@ using Roadmap.Domain;
 
 namespace Roadmap.Persistance.RoadmapCfg;
 
-public class TemplateUserConfiguration : IEntityTypeConfiguration<TemplateUser>
+public class TemplateUserConfiguration : IEntityTypeConfiguration<StageUser>
 {
-    public void Configure(EntityTypeBuilder<TemplateUser> builder)
+    public void Configure(EntityTypeBuilder<StageUser> builder)
     {
         builder.HasKey(templateUser => templateUser.Id);
     }

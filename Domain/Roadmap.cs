@@ -7,5 +7,5 @@ public class Roadmap
     public string Description { get; set; }
     public Category? Category { get; set; }
     public Guid CategoryId { get; set; }
-    public List<Template> Templates { get; set; }
+    public List<Stage> Templates { get; set; }
 }
