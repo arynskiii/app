@@ -29,9 +29,9 @@
 /home/aryn/app/Persistance/obj/Debug/net8.0/Persistance.AssemblyInfo.cs
 /home/aryn/app/Persistance/obj/Debug/net8.0/Persistance.csproj.CoreCompileInputs.cache
 /home/aryn/app/Persistance/obj/Debug/net8.0/Persistance.sourcelink.json
-/home/aryn/app/Persistance/obj/Debug/net8.0/Persistance.csproj.CopyComplete
 /home/aryn/app/Persistance/obj/Debug/net8.0/Persistance.dll
 /home/aryn/app/Persistance/obj/Debug/net8.0/refint/Persistance.dll
 /home/aryn/app/Persistance/obj/Debug/net8.0/Persistance.pdb
 /home/aryn/app/Persistance/obj/Debug/net8.0/Persistance.genruntimeconfig.cache
 /home/aryn/app/Persistance/obj/Debug/net8.0/ref/Persistance.dll
+/home/aryn/app/Persistance/obj/Debug/net8.0/Persistance.csproj.CopyComplete

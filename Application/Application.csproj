@@ -36,8 +36,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Dtos\SubTemplate\" />
-      <Folder Include="Dtos\Template\" />
       <Folder Include="Funcs\Commands\Roadmap\" />
     </ItemGroup>
 

@@ -1,22 +1,16 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Minio.DataModel.Args;
 using Roadmap.Application.Funcs.Commands.StatusFile;
 using Roadmap.WebApi.Models;
-using Minio;
-using Minio.Exceptions;
-using Minio.DataModel;
-using Minio.Credentials;
-using Minio.DataModel.Args;
 
 namespace Roadmap.WebApi.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class SendingFileController : BaseController
+public class FileController : BaseController
 {
     private readonly IMapper _mapper;
-    public SendingFileController(IMapper mapper) => _mapper = mapper;
+    public FileController(IMapper mapper) => _mapper = mapper;
 
     /// <summary>
     /// Send file and change status
@@ -28,7 +22,7 @@ public class SendingFileController : BaseController
     /// <returns>Returns id (guid)</returns>
     /// <response code="200"> Success</response>
     /// <response code="401"> If the user is not unauthorized</response>
-    [HttpPost()]
+    [HttpPost]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     public async Task SendFile([FromForm] SendFileDTO sendFileDTO)
@@ -40,7 +34,7 @@ public class SendingFileController : BaseController
             File = command.File
         };
 
-         await Mediator.Send(file);
+        await Mediator.Send(file);
         await Mediator.Send(command);
     }
 }

@@ -7,11 +7,12 @@ using Microsoft.IdentityModel.Tokens;
 using Roadmap.Application.Interfaces;
 using Roadmap.Persistance;
 using Microsoft.OpenApi.Models;
-using Minio;
+using FileService;
 using Roadmap.Application.Common.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);   
 var services = builder.Services;
+
 
 
 
@@ -23,6 +24,7 @@ services.AddAutoMapper(config =>
 
 services.AddApplication();
 services.AddPersistence(builder.Configuration);
+services.AddFileService(builder.Configuration);
 
 services.AddAuthentication(x =>
 {
@@ -89,24 +91,7 @@ app.UseSwagger();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
-using (var scope = app.Services.CreateScope())
-{
-    var serviceProvider = scope.ServiceProvider;
-    try
-    {
-        var context = serviceProvider.GetRequiredService<AppDbContext>();
-        var configuration = serviceProvider.GetRequiredService<IConfiguration>();
-        var endpoint = configuration.GetValue<string>("Endpoint");
-        var accessKey = configuration.GetValue<string>("AccessKey");
-        var secretKey = configuration.GetValue<string>("SecretKey");
-        services.AddMinio(configureClient => configureClient.WithEndpoint(endpoint).WithCredentials(accessKey, secretKey).WithSSL(false));
-    }
-    catch (Exception exception)
-    {
 
-    }
-    
 
 app.Run();
-}
 

@@ -7,15 +7,14 @@ using Roadmap.Application.Funcs.Query.GetSubTemplate;
 using Roadmap.WebApi.Models;
 
 namespace Roadmap.WebApi.Controllers;
+
 [Route("api/[controller]")]
 [ApiController]
-
 public class SubStageController : BaseController
 {
     private readonly IMapper _mapper;
-
     public SubStageController(IMapper mapper) => _mapper = mapper;
-    
+
     /// <summary>
     /// Create the subTemplate
     /// </summary>
@@ -67,5 +66,4 @@ public class SubStageController : BaseController
         var roadmapVM = await Mediator.Send(command);
         return roadmapVM;
     }
-
 }

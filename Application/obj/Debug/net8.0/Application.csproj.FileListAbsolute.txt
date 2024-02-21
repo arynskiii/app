@@ -25,9 +25,9 @@
 /home/aryn/app/Application/obj/Debug/net8.0/Application.AssemblyInfo.cs
 /home/aryn/app/Application/obj/Debug/net8.0/Application.csproj.CoreCompileInputs.cache
 /home/aryn/app/Application/obj/Debug/net8.0/Application.sourcelink.json
-/home/aryn/app/Application/obj/Debug/net8.0/Application.csproj.CopyComplete
 /home/aryn/app/Application/obj/Debug/net8.0/Application.dll
 /home/aryn/app/Application/obj/Debug/net8.0/refint/Application.dll
 /home/aryn/app/Application/obj/Debug/net8.0/Application.pdb
 /home/aryn/app/Application/obj/Debug/net8.0/Application.genruntimeconfig.cache
 /home/aryn/app/Application/obj/Debug/net8.0/ref/Application.dll
+/home/aryn/app/Application/obj/Debug/net8.0/Application.csproj.CopyComplete

@@ -3,7 +3,7 @@ using Roadmap.Application.Interfaces;
 
 namespace Roadmap.Application.Funcs.Commands.Sub_Template.CreateSub_Template;
 
-public class CreateSub_TemplateHandler: IRequestHandler<CreateSub_TemplateCommand,Guid>
+public class CreateSub_TemplateHandler : IRequestHandler<CreateSub_TemplateCommand, Guid>
 {
     private readonly IAppDbContext _dbContext;
 
@@ -20,16 +20,15 @@ public class CreateSub_TemplateHandler: IRequestHandler<CreateSub_TemplateComman
             throw new Exception("Uncorrect template ID");
         }
 
-        
+
         var sub_temp = new Domain.SubStage()
         {
             Title = request.Title,
             Description = request.Description,
-            TemplateId = request.TemplateId,
+            StageId = request.TemplateId,
         };
         await _dbContext.SubStages.AddAsync(sub_temp, cancellationToken);
         await _dbContext.SaveChangesAsync(cancellationToken);
-        return sub_temp.Id; 
+        return sub_temp.Id;
     }
-
 }

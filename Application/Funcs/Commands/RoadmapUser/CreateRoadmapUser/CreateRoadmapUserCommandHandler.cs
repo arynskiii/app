@@ -4,10 +4,10 @@ using Roadmap.Domain;
 
 namespace Roadmap.Application.Funcs.Commands.RoadmapUser.CreateRoadmapUser;
 
-public class CreateRoadmapUserHandler : IRequestHandler<CreateRoadmapUserCommand,Guid>
+public class CreateRoadmapUserCommandHandler : IRequestHandler<CreateRoadmapUserCommand, Guid>
 {
     private readonly IAppDbContext _dbContext;
-    public CreateRoadmapUserHandler(IAppDbContext dbContext) => _dbContext = dbContext;
+    public CreateRoadmapUserCommandHandler(IAppDbContext dbContext) => _dbContext = dbContext;
 
     public async Task<Guid> Handle(CreateRoadmapUserCommand request, CancellationToken cancellationToken)
     {
@@ -16,6 +16,7 @@ public class CreateRoadmapUserHandler : IRequestHandler<CreateRoadmapUserCommand
         {
             throw new Exception("Cannot find roadmap by this ID");
         }
+
         var rdmpUser = new Domain.RoadmapUser
         {
             UserId = request.UserId,
@@ -25,7 +26,6 @@ public class CreateRoadmapUserHandler : IRequestHandler<CreateRoadmapUserCommand
         };
         await _dbContext.RoadmapUs.AddAsync(rdmpUser, cancellationToken);
         await _dbContext.SaveChangesAsync(cancellationToken);
-        return  rdmpUser.Id;
+        return rdmpUser.Id;
     }
-    
 }

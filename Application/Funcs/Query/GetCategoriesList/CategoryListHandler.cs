@@ -1,8 +1,8 @@
 using AutoMapper;
+using Roadmap.Application.Interfaces;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Roadmap.Application.DTOs;
-using Roadmap.Application.Interfaces;
 
 namespace Roadmap.Application.Funcs.Query.GetAllCategories;
 

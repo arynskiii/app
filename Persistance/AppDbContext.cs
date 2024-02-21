@@ -29,7 +29,6 @@ public class AppDbContext : IdentityDbContext<User, IdentityRole<Guid>, Guid>, I
         builder.ApplyConfiguration(new UserConfiguration());
         builder.ApplyConfiguration(new CategoryConfiguration());
         builder.ApplyConfiguration(new TemplateConfiguration());
-       
         
         base.OnModelCreating(builder);
     }

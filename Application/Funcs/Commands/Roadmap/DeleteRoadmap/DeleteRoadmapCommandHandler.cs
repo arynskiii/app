@@ -13,15 +13,13 @@ public class DeleteRoadmapCommandHandler : IRequestHandler<DeleteRoadmapCommand>
 
     public async Task Handle(DeleteRoadmapCommand request, CancellationToken cancellationToken)
     {
-        var entity =await _DbContext.Roadmaps.FindAsync(new object[] { request.Id }, cancellationToken);
-        if (entity == null )
-      {
-          throw new NotFoundException(nameof(Domain.Roadmap), cancellationToken);
-      }
+        var entity = await _DbContext.Roadmaps.FindAsync(new object[] { request.Id }, cancellationToken);
+        if (entity == null)
+        {
+            throw new NotFoundException(nameof(Domain.Roadmap), cancellationToken);
+        }
 
         _DbContext.Roadmaps.Remove(entity);
-      await  _DbContext.SaveChangesAsync(cancellationToken);
+        await _DbContext.SaveChangesAsync(cancellationToken);
     }
-
-
 }

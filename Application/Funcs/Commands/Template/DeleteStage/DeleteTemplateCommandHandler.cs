@@ -12,7 +12,7 @@ public class DeleteTemplateCommandHandler : IRequestHandler<DeleteTemplateComman
 
     public async Task Handle(DeleteTemplateCommand request, CancellationToken cancellationToken)
     {
-        var  template=await _dbContext.Stages.FindAsync(new object[] { request.Id }, cancellationToken);
+        var template = await _dbContext.Stages.FindAsync(new object[] { request.Id }, cancellationToken);
         if (template == null)
         {
             throw new NotFoundException(nameof(Domain.Stage), cancellationToken);

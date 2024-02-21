@@ -7,15 +7,15 @@ using Roadmap.Application.Roadmaps.Commands.Admin.LoginAdmin;
 using Roadmap.Application.Roadmaps.Commands.CreateAdmin;
 using Roadmap.WebApi.Models;
 
-namespace Roadmap.WebApi.Controllers; 
+namespace Roadmap.WebApi.Controllers;
+
 [Route("api/[controller]/[action]")]
 [ApiController]
-
 public class UserController : BaseController
 {
-
     private readonly IMapper _mapper;
     public UserController(IMapper mapper) => _mapper = mapper;
+
     /// <summary>
     ///  Create User
     /// </summary>
@@ -34,12 +34,12 @@ public class UserController : BaseController
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<ActionResult<Guid>> CreateUser([FromBody] CreateUserDTO userDTO)
     {
-       var command= _mapper.Map<CreateUserCommand>(userDTO);
-      var userId=await Mediator.Send(command);
-      return userId;
+        var command = _mapper.Map<CreateUserCommand>(userDTO);
+        var userId = await Mediator.Send(command);
+        return userId;
     }
 
-    
+
     /// <summary>
     ///  Login User
     /// </summary>
@@ -58,7 +58,6 @@ public class UserController : BaseController
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-
     public async Task<ActionResult> Login([FromBody] LoginUserDTO userDto)
     {
         var input = new LoginAdminCommand();
@@ -66,14 +65,12 @@ public class UserController : BaseController
         input.Password = userDto.Password;
         try
         {
-          var otput=await  Mediator.Send(input);
-          return Ok(otput);
+            var otput = await Mediator.Send(input);
+            return Ok(otput);
         }
         catch (Exception exception)
         {
             return Unauthorized(exception.Message);
         }
-
     }
-    
 }

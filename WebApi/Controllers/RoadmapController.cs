@@ -1,10 +1,6 @@
-using System.Net;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Minio;
-using Minio.DataModel.Args;
-using Minio.Exceptions;
 using Roadmap.Application.Funcs.Commands.RoadmapUser.CreateRoadmapUser;
 using Roadmap.Application.Funcs.Query.GetRoadmapByID;
 using Roadmap.Application.Roadmaps.Commands.CreateRoadmap;
@@ -28,13 +24,13 @@ public class RoadmapController : BaseController
     /// Sample request:</remarks>
     /// <returns>Returns RoadmapListVM</returns>
     /// <response code="200"> Success</response>
-    [HttpGet("roadmaps")]
+    [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<ActionResult<RoadmapVMDTO>> GetAllRoadmaps()
     {
         var query = new GetRoadmapListQuery();
-       
-        
+
+
         var vm = await Mediator.Send(query);
         return Ok(vm);
     }
@@ -59,12 +55,12 @@ public class RoadmapController : BaseController
     [HttpPost("{id}")]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-    public async Task<ActionResult<Guid>> CreateRoadmap(Guid id, [FromBody] CreateRoadmapDTO createRoadmapDTO)
+    public async Task<ActionResult<Guid>> Create(Guid id, [FromBody] CreateRoadmapDTO createRoadmapDTO)
     {
         var command = _mapper.Map<CreateRoadmapCommand>(createRoadmapDTO);
-        command.CategoryId = id;   
+        command.CategoryId = id;
 
-    var i = await Mediator.Send(command);
+        var i = await Mediator.Send(command);
         return i;
     }
 
@@ -86,14 +82,14 @@ public class RoadmapController : BaseController
     [Authorize(AuthenticationSchemes = "Bearer")]
     [Authorize(Roles = "Admin")]
     [HttpPut("{id}")]
-    public async Task<ActionResult<Guid>> Update(Guid id,[FromBody] UpdateRoadmapDTO updateRoadmapDTO)
+    public async Task<ActionResult<Guid>> Update(Guid id, [FromBody] UpdateRoadmapDTO updateRoadmapDTO)
     {
         var command = _mapper.Map<UpdateRoadmapCommand>(updateRoadmapDTO);
         command.Id = id;
-        var idRoadmap=  await Mediator.Send(command);
-      return idRoadmap;
+        var idRoadmap = await Mediator.Send(command);
+        return idRoadmap;
     }
-    
+
     /// <summary>
     /// Deletes the Roadmap by id
     /// </summary>
@@ -108,13 +104,14 @@ public class RoadmapController : BaseController
     [HttpDelete("{id}")]
     [Authorize(Roles = "Admin")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
-    [ProducesResponseType(StatusCodes.Status401Unauthorized)]   
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     public async Task<IActionResult> Delete(Guid id)
     {
         var command = new DeleteRoadmapCommand { Id = id };
         await Mediator.Send(command);
         return NoContent();
     }
+
     /// <summary>
     ///  Gets the Roadmap
     /// </summary>
@@ -127,21 +124,19 @@ public class RoadmapController : BaseController
     /// <response code="404"> If roadmap not found</response>
     [Authorize]
     [HttpPut("{id}")]
-    public async Task<ActionResult<RoadmapVMDTO>> GetRoadmapByID(Guid id)
+    public async Task<ActionResult<RoadmapVMDTO>> Get(Guid id)
     {
         var command = new GetRoadmapByIDQuery { Id = id };
-     
+
 
         var secCommand = new CreateRoadmapUserCommand
         {
             RoadmapId = command.Id
         };
         secCommand.UserId = UserId;
-     await Mediator.Send(secCommand);
-        
+        await Mediator.Send(secCommand);
+
         var roadmapVM = await Mediator.Send(command);
         return roadmapVM;
     }
-        
-    
 }

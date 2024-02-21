@@ -5,7 +5,7 @@ using Roadmap.Application.Interfaces;
 
 namespace Roadmap.Application.Roadmaps.Commands.UpdateRoadmap;
 
-public class UpdateRoadmapCommandHandler : IRequestHandler<UpdateRoadmapCommand,Guid>
+public class UpdateRoadmapCommandHandler : IRequestHandler<UpdateRoadmapCommand, Guid>
 {
     private readonly IAppDbContext _dbContext;
     public UpdateRoadmapCommandHandler(IAppDbContext dbContext) => _dbContext = dbContext;
@@ -13,10 +13,9 @@ public class UpdateRoadmapCommandHandler : IRequestHandler<UpdateRoadmapCommand,
     public async Task<Guid> Handle(UpdateRoadmapCommand request, CancellationToken cancellationToken)
     {
         var entity = await _dbContext.Roadmaps.FirstOrDefaultAsync(rdmp => rdmp.Id == request.Id, cancellationToken);
-        if (entity == null )
+        if (entity == null)
         {
             throw new NotFoundException(nameof(Roadmap), request.Id);
-
         }
 
         entity.Description = request.Description;
@@ -24,5 +23,4 @@ public class UpdateRoadmapCommandHandler : IRequestHandler<UpdateRoadmapCommand,
         await _dbContext.SaveChangesAsync(cancellationToken);
         return entity.Id;
     }
-
 }

@@ -238,6 +238,69 @@
         }
       }
     },
+    "/home/aryn/app/FileService/FileService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/aryn/app/FileService/FileService.csproj",
+        "projectName": "FileService",
+        "projectPath": "/home/aryn/app/FileService/FileService.csproj",
+        "packagesPath": "/home/aryn/.nuget/packages/",
+        "outputPath": "/home/aryn/app/FileService/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/aryn/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/aryn/app/Application/Application.csproj": {
+                "projectPath": "/home/aryn/app/Application/Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Minio": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/aryn/.dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/aryn/app/Persistance/Persistance.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -378,6 +441,9 @@
               "/home/aryn/app/Application/Application.csproj": {
                 "projectPath": "/home/aryn/app/Application/Application.csproj"
               },
+              "/home/aryn/app/FileService/FileService.csproj": {
+                "projectPath": "/home/aryn/app/FileService/FileService.csproj"
+              },
               "/home/aryn/app/Persistance/Persistance.csproj": {
                 "projectPath": "/home/aryn/app/Persistance/Persistance.csproj"
               }
@@ -448,7 +514,7 @@
             },
             "Minio": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[6.0.2, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",

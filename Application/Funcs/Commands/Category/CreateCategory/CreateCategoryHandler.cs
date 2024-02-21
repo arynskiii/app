@@ -3,7 +3,7 @@ using Roadmap.Application.Interfaces;
 
 namespace Roadmap.Application.Funcs.Commands.Category.CreateCategory;
 
-public class CreateCategoryHandler : IRequestHandler<CreateCategoryCommand,Guid>
+public class CreateCategoryHandler : IRequestHandler<CreateCategoryCommand, Guid>
 {
     private readonly IAppDbContext _dbContext;
     public CreateCategoryHandler(IAppDbContext dbContext) => _dbContext = dbContext;

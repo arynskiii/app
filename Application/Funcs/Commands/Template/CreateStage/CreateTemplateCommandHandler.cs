@@ -12,7 +12,6 @@ public class CreateTemplateCommandHandler : IRequestHandler<CreateTemplateComman
     public CreateTemplateCommandHandler(IAppDbContext dbContext)
     {
         _dbContext = dbContext;
-      
     }
 
     public async Task<Guid> Handle(CreateTemplateCommand request, CancellationToken cancellationToken)
@@ -25,6 +24,7 @@ public class CreateTemplateCommandHandler : IRequestHandler<CreateTemplateComman
             {
                 throw new Exception("Roadmap is not found");
             }
+
             var template = new Domain.Stage
             {
                 Title = request.Title,
@@ -34,7 +34,7 @@ public class CreateTemplateCommandHandler : IRequestHandler<CreateTemplateComman
 
             await _dbContext.Stages.AddAsync(template, cancellationToken);
             await _dbContext.SaveChangesAsync(cancellationToken);
-            
+
             return template.Id;
         }
         catch (Exception ex)
@@ -43,5 +43,3 @@ public class CreateTemplateCommandHandler : IRequestHandler<CreateTemplateComman
         }
     }
 }
-       
-    

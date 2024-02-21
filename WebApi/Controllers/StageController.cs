@@ -9,15 +9,13 @@ using Roadmap.WebApi.Models;
 
 namespace Roadmap.WebApi.Controllers;
 
-
-
 [Route("api/[controller]")]
 [ApiController]
 public class StageController : BaseController
 {
-
     private readonly IMapper _mapper;
     public StageController(IMapper mapper) => _mapper = mapper;
+
     /// <summary>
     /// Create the Template
     /// </summary>
@@ -34,10 +32,8 @@ public class StageController : BaseController
     /// <returns>Returns id (guid)</returns>
     /// <response code="201"> Success</response>
     /// <response code="401"> If the user is not admin</response>
-    
-     [Authorize(Roles = "Admin")]
-     [HttpPost]
-
+    [Authorize(Roles = "Admin")]
+    [HttpPost]
     public async Task<ActionResult<Guid>> CreateRoadmap([FromBody] CreateTemplateDTO createTemplateDto)
     {
         var command = _mapper.Map<CreateTemplateCommand>(createTemplateDto);
@@ -45,7 +41,6 @@ public class StageController : BaseController
         return id;
     }
 
-    
     /// <summary>
     /// Deletes the Template by id
     /// </summary>
@@ -61,12 +56,10 @@ public class StageController : BaseController
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> DeleteTemplate([FromBody] DeleteTemplateDTO deleteTemplateDto)
     {
-      await Mediator.Send(deleteTemplateDto);
-      return NoContent();
-
+        await Mediator.Send(deleteTemplateDto);
+        return NoContent();
     }
-    
-    
+
     /// <summary>
     ///  Gets the Templates
     /// </summary>
@@ -77,28 +70,26 @@ public class StageController : BaseController
     /// <returns>Returns RoadmapVM</returns>
     /// <response code="200"> Success</response>
     /// <response code="404"> If roadmap not found</response>
-  [HttpGet("{id}")]
-  [Authorize]
-  public async Task<ActionResult<GetTemplateOutput>> GetTemplateById(Guid id)
-  {
-      var command = new GetTemplateCommand
-      {
-          Id = id,
-          UserId = UserId
-      };
-      var RoadmapUser = new RoadmapUser()
-      {
-          UserId = UserId,
-
-      };
-      var chCommand = new CreateTemplateUserCommand()
-      {
-          TemplateId = id,
-          RoadmapUser = RoadmapUser
-          
-      };
-      var templateVM = await Mediator.Send(command);
-      await Mediator.Send(chCommand);
-      return templateVM;
-  }
+    [HttpGet("{id}")]
+    [Authorize]
+    public async Task<ActionResult<GetTemplateOutput>> GetTemplateById(Guid id)
+    {
+        var command = new GetTemplateCommand
+        {
+            Id = id,
+            UserId = UserId
+        };
+        var RoadmapUser = new RoadmapUser()
+        {
+            UserId = UserId,
+        };
+        var chCommand = new CreateTemplateUserCommand()
+        {
+            TemplateId = id,
+            RoadmapUser = RoadmapUser
+        };
+        var templateVM = await Mediator.Send(command);
+        await Mediator.Send(chCommand);
+        return templateVM;
+    }
 }
